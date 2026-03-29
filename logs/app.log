@@ -1,0 +1,685 @@
+2026-03-25 11:38:24 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:40:40 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:40:42 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:40:51 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:40:54 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:40:55 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:41:18 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'admin@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:41:56 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:41:57 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:41:59 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:42:01 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:42:01 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:42:01 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:42:24 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'faculty@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-25 11:44:45 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:44:47 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:45:15 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:45:21 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:45:30 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is not valid. It should have a period.', 'input': 'faculty@aiales', 'ctx': {'reason': 'The part after the @-sign is not valid. It should have a period.'}}]
+2026-03-25 11:45:31 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is not valid. It should have a period.', 'input': 'faculty@aiales', 'ctx': {'reason': 'The part after the @-sign is not valid. It should have a period.'}}]
+2026-03-25 11:45:40 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:45:41 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:45:46 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:45:47 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is not valid. It should have a period.', 'input': 'faculty@aiales', 'ctx': {'reason': 'The part after the @-sign is not valid. It should have a period.'}}]
+2026-03-25 11:45:49 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is not valid. It should have a period.', 'input': 'faculty@aiales', 'ctx': {'reason': 'The part after the @-sign is not valid. It should have a period.'}}]
+2026-03-25 11:45:52 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is not valid. It should have a period.', 'input': 'faculty@aiales', 'ctx': {'reason': 'The part after the @-sign is not valid. It should have a period.'}}]
+2026-03-25 11:45:58 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:46:00 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:46:02 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:46:02 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:46:02 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:46:29 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:47:02 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:47:03 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-25 11:49:10 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:53:26 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:58:27 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 11:58:52 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 12:00:37 | INFO | app.main | Database tables ensured for environment development
+2026-03-25 12:01:41 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:02:23 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:02:48 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-27 14:02:48 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-27 14:03:11 | WARNING | app.main | Application error on /api/v1/experiments/8b782c9f-65aa-4a0e-857d-791d2d1ecef4/reports: Run evaluation before generating reports.
+2026-03-27 14:03:11 | WARNING | app.main | Application error on /api/v1/experiments/8b782c9f-65aa-4a0e-857d-791d2d1ecef4/reports/network/data: Run evaluation before generating reports.
+2026-03-27 14:04:16 | WARNING | app.main | Application error on /api/v1/experiments/8b782c9f-65aa-4a0e-857d-791d2d1ecef4/evaluate: No submissions found for this experiment.
+2026-03-27 14:05:36 | WARNING | app.main | Validation error on /api/v1/classes/3b99d795-0dc1-4557-b87a-5a86a4b68f5a/experiments: [{'type': 'string_too_short', 'loc': ('body', 'topic'), 'msg': 'String should have at least 3 characters', 'input': '', 'ctx': {'min_length': 3}}]
+2026-03-27 14:06:42 | WARNING | app.main | Application error on /api/v1/experiments/8b782c9f-65aa-4a0e-857d-791d2d1ecef4/evaluate: No submissions found for this experiment.
+2026-03-27 14:06:48 | WARNING | app.main | Application error on /api/v1/experiments/8b782c9f-65aa-4a0e-857d-791d2d1ecef4/evaluate: No submissions found for this experiment.
+2026-03-27 14:07:22 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'student@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-27 14:07:23 | WARNING | app.main | Validation error on /api/v1/auth/login: [{'type': 'value_error', 'loc': ('body', 'email'), 'msg': 'value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email.', 'input': 'student@aiales.local', 'ctx': {'reason': 'The part after the @-sign is a special-use or reserved name that cannot be used with email.'}}]
+2026-03-27 14:09:02 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/evaluate: No submissions found for this experiment.
+2026-03-27 14:09:28 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/evaluate: No submissions found for this experiment.
+2026-03-27 14:09:36 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports: Run evaluation before generating reports.
+2026-03-27 14:09:36 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports/network/data: Run evaluation before generating reports.
+2026-03-27 14:09:38 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports: Run evaluation before generating reports.
+2026-03-27 14:09:39 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports/network/data: Run evaluation before generating reports.
+2026-03-27 14:09:45 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports: Run evaluation before generating reports.
+2026-03-27 14:09:45 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/reports/network/data: Run evaluation before generating reports.
+2026-03-27 14:09:55 | WARNING | app.main | Application error on /api/v1/experiments/5ce32739-d050-4227-a3a9-bf5df1a7014d/evaluate: No submissions found for this experiment.
+2026-03-27 14:15:35 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-27 14:17:11 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-27 14:17:15 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-27 14:20:22 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/evaluate: No submissions found for this experiment.
+2026-03-27 14:25:16 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:27:09 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:29:28 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:29:33 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/reports: Run evaluation before generating reports.
+2026-03-27 14:29:33 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/reports/network/data: Run evaluation before generating reports.
+2026-03-27 14:29:41 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload: No submissions were saved for this experiment. Check student enrollment, filename matching, or manifest_json mapping.
+2026-03-27 14:29:48 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/evaluate: No submissions found for this experiment.
+2026-03-27 14:29:52 | WARNING | app.main | Application error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload: No submissions were saved for this experiment. Check student enrollment, filename matching, or manifest_json mapping.
+2026-03-27 14:32:04 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:38:01 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\submissions.py", line 62, in upload_submissions
+    response = SubmissionService.upload_batch(
+        db=db,
+    ...<2 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 273, in upload_batch
+    matched_student = SubmissionService._resolve_student_for_upload(
+        db=db,
+    ...<3 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 167, in _resolve_student_for_upload
+    UserCreate(
+    ~~~~~~~~~~^
+        email=student_email,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        is_active=True,
+        ^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for UserCreate
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='ai.gc@uploads.aiales.local', input_type=str]
+2026-03-27 14:38:02 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\submissions.py", line 62, in upload_submissions
+    response = SubmissionService.upload_batch(
+        db=db,
+    ...<2 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 273, in upload_batch
+    matched_student = SubmissionService._resolve_student_for_upload(
+        db=db,
+    ...<3 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 167, in _resolve_student_for_upload
+    UserCreate(
+    ~~~~~~~~~~^
+        email=student_email,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        is_active=True,
+        ^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for UserCreate
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='ai.gc@uploads.aiales.local', input_type=str]
+2026-03-27 14:38:33 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:38:57 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-27 14:39:08 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\submissions.py", line 62, in upload_submissions
+    response = SubmissionService.upload_batch(
+        db=db,
+    ...<2 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 273, in upload_batch
+    matched_student = SubmissionService._resolve_student_for_upload(
+        db=db,
+    ...<3 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 167, in _resolve_student_for_upload
+    UserCreate(
+    ~~~~~~~~~~^
+        email=student_email,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        is_active=True,
+        ^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for UserCreate
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='ai.gc@uploads.aiales.local', input_type=str]
+2026-03-27 14:39:20 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/submissions/upload
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\submissions.py", line 62, in upload_submissions
+    response = SubmissionService.upload_batch(
+        db=db,
+    ...<2 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 273, in upload_batch
+    matched_student = SubmissionService._resolve_student_for_upload(
+        db=db,
+    ...<3 lines>...
+        manifest_map=manifest_map,
+    )
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\submission_service.py", line 167, in _resolve_student_for_upload
+    UserCreate(
+    ~~~~~~~~~~^
+        email=student_email,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        is_active=True,
+        ^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\pydantic\main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for UserCreate
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='ai.gc@uploads.aiales.local', input_type=str]
+2026-03-27 14:40:39 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:43:04 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:45:30 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-27 14:46:01 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-27 14:46:01 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-27 14:46:01 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-27 14:46:01 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-27 14:46:06 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/evaluate
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2125, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: results.submission_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\evaluation.py", line 30, in evaluate_experiment
+    response, _ = EvaluationService.evaluate_experiment(db, experiment, current_user)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\evaluation_service.py", line 210, in evaluate_experiment
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1143, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1844, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2133, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2125, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: results.submission_id
+[SQL: INSERT INTO results (submission_id, marks, plagiarism_score, plagiarism_level, relevance_score, flags, breakdown, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('97f1d141-d051-463e-be50-e8bd14ff7a17', 53.46, 0.4418, 'LOW', 0.1127, '{"missing_sections": ["experiment_title", "implementation", "analysis"], "blank_screenshot_count": 0, "duplicate_within_submission": false, "duplicate_across_submissions": [], "semantic_method": "sentence_transformer"}', '{"headings": [{"section": "aim", "heading": "AIM:", "line_index": 1, "score": 1.0}, {"section": "theory", "heading": "THEORY:", "line_index": 9, "sco ... (1000 characters truncated) ... e814cec8ace8", "combined_score": 0.4418, "tfidf_score": 0.4159, "ngram_score": 0.0418, "semantic_score": 0.8138}], "page_count": 8, "image_count": 2}', 'f29538ad-39a9-4e4f-b19d-8ce2ff9a4340', '2026-03-27 09:16:06.039466', '2026-03-27 09:16:06.039469', 'e75ac2da-eccb-409d-a7ab-e814cec8ace8', 46.75, 0.4418, 'LOW', 0.2735, '{"missing_sections": ["experiment_title", "dataset", "analysis"], "blank_screenshot_count": 0, "duplicate_within_submission": false, "duplicate_across_submissions": [], "semantic_method": "sentence_transformer"}', '{"headings": [{"section": "experiment_title", "heading": "Title: Missionaries and Cannibkes", "line_index": 0, "score": 0.95}, {"section": "aim", "he ... (1025 characters truncated) ... e8bd14ff7a17", "combined_score": 0.4418, "tfidf_score": 0.4159, "ngram_score": 0.0418, "semantic_score": 0.8138}], "page_count": 6, "image_count": 2}', 'ccd8c266-df9e-4f8c-b9a9-defcae21ce4c', '2026-03-27 09:16:06.039473', '2026-03-27 09:16:06.039474', '7bfbbe45-323e-43e9-b902-0689a4d74e24', 0.0, 0.0, 'LOW', 0.0, '{"extraction_error": "argument of type \'IndirectObject\' is not a container or iterable"}', '{"error": "argument of type \'IndirectObject\' is not a container or iterable"}', '33947343-75da-47c5-8e60-0d3d1f5cb1fc', '2026-03-27 09:16:06.039476', '2026-03-27 09:16:06.039477')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-27 14:47:31 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:48:23 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:48:37 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-27 14:48:58 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-27 14:48:58 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-27 14:53:05 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:53:05 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:53:48 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:53:48 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:00 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:00 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:20 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:20 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:30 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:30 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:40 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:40 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:59 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 14:55:59 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:02:30 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:02:30 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:02:52 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:02:52 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:03:10 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:03:32 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:03:32 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:03:55 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:03:55 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:16:01 | INFO | app.main | Database tables ensured for environment development
+2026-03-27 15:16:13 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-28 12:52:15 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:52:25 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-28 12:57:20 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:57:43 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:57:57 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:58:04 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:58:24 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:58:44 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:59:01 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 12:59:09 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 13:00:10 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-28 13:03:43 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-28 13:03:45 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-28 13:03:53 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-28 13:03:55 | WARNING | app.main | Application error on /api/v1/auth/login: Invalid email or password.
+2026-03-28 13:10:03 | INFO | app.main | Database tables ensured for environment development
+2026-03-28 13:10:56 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-03-28 13:11:07 | ERROR | app.main | Unhandled error on /api/v1/experiments/81179c54-c47d-4a43-90ba-f6c6878a5b29/reports
+Traceback (most recent call last):
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\RCOEM\AppData\Roaming\Python\Python314\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\reports.py", line 45, in get_report_summary
+    summary, _ = _build_bundle(db, experiment)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\api\routes\reports.py", line 28, in _build_bundle
+    return ReportService.generate_report_bundle(experiment, rows, submission_lookup, edges)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\report_service.py", line 433, in generate_report_bundle
+    network_response, network_artifact = ReportService.generate_network_graph(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        experiment=experiment,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        submission_lookup=submission_lookup,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        edges=edges,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RCOEM\Documents\lab assessment\app\services\report_service.py", line 211, in generate_network_graph
+    "submitter_label": metadata["label"],
+                       ~~~~~~~~^^^^^^^^^
+KeyError: 'label'

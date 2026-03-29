@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 760px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "24488da4-d766-449d-bd6b-e99e8b42ec26", "label": "28cse A1 B2 29 Exp01", "shape": "dot", "title": "28cse A1 B2 29 Exp01\u003cbr\u003e28CSE_A1_B2_29_Exp01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "92dd8036-1729-4b76-be58-1bfb2709f60b", "label": "28cse A1 B2 24 1 Ai", "shape": "dot", "title": "28cse A1 B2 24 1 Ai\u003cbr\u003e28CSE_A1_B2_24_EXP_1_AI.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "9e6609b3-02a2-49cf-8b1e-18e5c7ec6074", "label": "28cse A1 B1 12 Exp01", "shape": "dot", "title": "28cse A1 B1 12 Exp01\u003cbr\u003e28CSE_A1_B1_12_EXP01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "b093c686-bdc4-464b-84eb-8d4dbbbcb465", "label": "A1 06 Expt01 Ai Gc", "shape": "dot", "title": "A1 06 Expt01 Ai Gc\u003cbr\u003eA1-06-Expt01-AI_Gc.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "74f880d4-19bc-40f1-9e1a-ec97c8b51083", "label": "A1 03 Exp01 Ai Gc", "shape": "dot", "title": "A1 03 Exp01 Ai Gc\u003cbr\u003eA1-03_Exp01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "951426aa-54d9-43dd-91d4-5c7302512547", "label": "A1 B2 Practical1 A1 Gc", "shape": "dot", "title": "A1 B2 Practical1 A1 Gc\u003cbr\u003eA1_B2_PRACTICAL1_A1_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "97ed4bd9-aebb-4eb2-ade2-94253624c918", "label": "A1 B1 11 Exp1 Ai Gc", "shape": "dot", "title": "A1 B1 11 Exp1 Ai Gc\u003cbr\u003eA1_B1_11_Exp1_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "be67bd37-59ad-435a-9a71-85c4a4a0e008", "label": "28csea1 B1 18 Exp01 Ai Gc", "shape": "dot", "title": "28csea1 B1 18 Exp01 Ai Gc\u003cbr\u003e28CSEA1_B1_18_Exp01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "8d2a46fd-1200-4711-a0ed-71dc4544f7d4", "label": "28cse033 Exp01 Ai Gc", "shape": "dot", "title": "28cse033 Exp01 Ai Gc\u003cbr\u003e28CSE033_Exp01_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "111971ba-7cba-4cb9-99ea-6bbe172ff463", "label": "28cse025 Exp01 Ai Gc", "shape": "dot", "title": "28cse025 Exp01 Ai Gc\u003cbr\u003e28CSE025_Exp01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "c2c3e747-b22a-4cb9-b175-dad7218ea195", "label": "28cse014 Exp01 Ai Gc", "shape": "dot", "title": "28cse014 Exp01 Ai Gc\u003cbr\u003e28CSE014_Exp01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "65c5c125-6e69-4821-8c00-482fcbbbea7e", "label": "28cse014 Exp01 Ai Gc 3", "shape": "dot", "title": "28cse014 Exp01 Ai Gc 3\u003cbr\u003e28CSE014_Exp01_AI_GC(3).pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "c12569f8-3bc8-45b6-962b-bdd11fbae959", "label": "28cse014 Exp01 Ai Gc 2", "shape": "dot", "title": "28cse014 Exp01 Ai Gc 2\u003cbr\u003e28CSE014_Exp01_AI_GC(2).pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "e7d0d69b-8b1f-42b6-ab15-749d87c0e557", "label": "28cse08 Exp01 Ai Gc", "shape": "dot", "title": "28cse08 Exp01 Ai Gc\u003cbr\u003e28CSE08_Exp01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "d551e7fc-3d2a-44da-9045-bb895cf20662", "label": "28cse04 Exp01 Ai Gc", "shape": "dot", "title": "28cse04 Exp01 Ai Gc\u003cbr\u003e28CSE04_Exp01_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "823935c4-76cc-445f-a9c0-c5c6f74922aa", "label": "28cse002 Exp01 Ai Gc", "shape": "dot", "title": "28cse002 Exp01 Ai Gc\u003cbr\u003e28CSE002_Exp01_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "635310a1-050d-4782-b2e8-c232cc003b1b", "label": "28cse001 Exp01 Ai Gc", "shape": "dot", "title": "28cse001 Exp01 Ai Gc\u003cbr\u003e28CSE001_Exp01_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "72b1f345-1d22-4e7a-9f0f-9e91410b6e43", "label": "28cse001 Exp01 A1 Gc", "shape": "dot", "title": "28cse001 Exp01 A1 Gc\u003cbr\u003e28CSE001_Exp01_A1_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "f49034b8-5ce8-4a9c-b6de-e4e2c73e51b4", "label": "28cse Exp01 A1 B2 27 Ai", "shape": "dot", "title": "28cse Exp01 A1 B2 27 Ai\u003cbr\u003e28CSE_EXP01_A1_B2_27_AI.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "d9fc8505-ec82-4b8c-986d-6c39bdc3e092", "label": "28cse A1 B2 30 01", "shape": "dot", "title": "28cse A1 B2 30 01\u003cbr\u003e28CSE_A1_B2_30_EXP_01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "ed6b6dad-5c70-49b0-80bf-f4c611a5a189", "label": "28cse A1 B2 27 Exp1", "shape": "dot", "title": "28cse A1 B2 27 Exp1\u003cbr\u003e28CSE_A1_B2_27_EXP1.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "a958c32a-7bcb-4442-bf08-5a3736c10f92", "label": "28cse A1 B2 26 Exp01 Ai", "shape": "dot", "title": "28cse A1 B2 26 Exp01 Ai\u003cbr\u003e28CSE_A1_B2_26_EXP01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "42da21ef-612a-4282-a839-4f2acbb746fd", "label": "28cse A1 B2 21 Exp01", "shape": "dot", "title": "28cse A1 B2 21 Exp01\u003cbr\u003e28CSE_A1_B2_21_EXP01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "be66a646-c5ae-49c9-a073-31e8eea01d85", "label": "28cse A1 B2 20 Exp01", "shape": "dot", "title": "28cse A1 B2 20 Exp01\u003cbr\u003e28CSE_A1_B2_20_Exp01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "6d225e93-9c17-4571-a97f-9e304e666177", "label": "28cse A1 B2 19 Exp1", "shape": "dot", "title": "28cse A1 B2 19 Exp1\u003cbr\u003e28CSE_A1_B2_19_Exp1.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "d5f4970d-4a76-498e-a702-95e695e081f4", "label": "28cse A1 B1 17 Exp1", "shape": "dot", "title": "28cse A1 B1 17 Exp1\u003cbr\u003e28CSE_A1_B1_17_EXP1.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "5e44a2e7-835d-43eb-a594-cb4ac2139fc9", "label": "28cse A1 B1 16 Exp01", "shape": "dot", "title": "28cse A1 B1 16 Exp01\u003cbr\u003e28CSE_A1_B1_16_EXP01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "a0e0b586-31b3-4b18-80b1-d1fdc536945c", "label": "28cse A1 B1 15 Exp01 Ai", "shape": "dot", "title": "28cse A1 B1 15 Exp01 Ai\u003cbr\u003e28CSE_A1_B1_15_exp01_AI_GC.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "00a74e12-465a-4d60-a12c-0dcd467c6f03", "label": "28cse A1 B1 09 Exp1", "shape": "dot", "title": "28cse A1 B1 09 Exp1\u003cbr\u003e28CSE_A1_B1_09_EXP1.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "8430665f-6e30-42d6-8995-a8eada6139ab", "label": "28cse A1 B1 07 Exp01", "shape": "dot", "title": "28cse A1 B1 07 Exp01\u003cbr\u003e28CSE_A1_B1_07_EXP01.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "f8c289c1-ebbc-4566-acab-0153488d1b5e", "label": "28cse A1 B1 05 Exp01", "shape": "dot", "title": "28cse A1 B1 05 Exp01\u003cbr\u003e28CSE_A1_B1_05_Exp01.pdf"}, {"color": "#0f766e", "font": {"color": "#0f172a"}, "id": "dc060be5-b2fa-4945-b105-0b71d18699a8", "label": "28 Experiment01 Ai Gc", "shape": "dot", "title": "28 Experiment01 Ai Gc\u003cbr\u003e28_Experiment01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "20b3ef6f-9ef7-4b2c-9e62-8b7fe52573e1", "label": "28 Cse 22 Exp01 Ai Gc", "shape": "dot", "title": "28 Cse 22 Exp01 Ai Gc\u003cbr\u003e28_CSE_22_EXP01_AI_GC.pdf"}, {"color": "#d97706", "font": {"color": "#0f172a"}, "id": "479cf124-3fe7-4add-b198-714722ee6410", "label": "13 Exp01 Ai Gc", "shape": "dot", "title": "13 Exp01 Ai Gc\u003cbr\u003e13_Exp01_AI_GC.pdf"}]);
+                  edges = new vis.DataSet([{"from": "92dd8036-1729-4b76-be58-1bfb2709f60b", "to": "f8c289c1-ebbc-4566-acab-0153488d1b5e", "value": 3.634}, {"from": "b093c686-bdc4-464b-84eb-8d4dbbbcb465", "to": "d5f4970d-4a76-498e-a702-95e695e081f4", "value": 3.5010000000000003}, {"from": "74f880d4-19bc-40f1-9e1a-ec97c8b51083", "to": "ed6b6dad-5c70-49b0-80bf-f4c611a5a189", "value": 3.91}, {"from": "74f880d4-19bc-40f1-9e1a-ec97c8b51083", "to": "f49034b8-5ce8-4a9c-b6de-e4e2c73e51b4", "value": 3.851}, {"from": "951426aa-54d9-43dd-91d4-5c7302512547", "to": "6d225e93-9c17-4571-a97f-9e304e666177", "value": 4.624}, {"from": "951426aa-54d9-43dd-91d4-5c7302512547", "to": "8430665f-6e30-42d6-8995-a8eada6139ab", "value": 3.572}, {"from": "8d2a46fd-1200-4711-a0ed-71dc4544f7d4", "to": "ed6b6dad-5c70-49b0-80bf-f4c611a5a189", "value": 4.114}, {"from": "8d2a46fd-1200-4711-a0ed-71dc4544f7d4", "to": "f49034b8-5ce8-4a9c-b6de-e4e2c73e51b4", "value": 4.088}, {"from": "c2c3e747-b22a-4cb9-b175-dad7218ea195", "to": "c12569f8-3bc8-45b6-962b-bdd11fbae959", "value": 7.393}, {"from": "c2c3e747-b22a-4cb9-b175-dad7218ea195", "to": "65c5c125-6e69-4821-8c00-482fcbbbea7e", "value": 7.34}, {"from": "65c5c125-6e69-4821-8c00-482fcbbbea7e", "to": "c12569f8-3bc8-45b6-962b-bdd11fbae959", "value": 9.874}, {"from": "d551e7fc-3d2a-44da-9045-bb895cf20662", "to": "20b3ef6f-9ef7-4b2c-9e62-8b7fe52573e1", "value": 3.937}, {"from": "f49034b8-5ce8-4a9c-b6de-e4e2c73e51b4", "to": "ed6b6dad-5c70-49b0-80bf-f4c611a5a189", "value": 8.785}, {"from": "a958c32a-7bcb-4442-bf08-5a3736c10f92", "to": "f8c289c1-ebbc-4566-acab-0153488d1b5e", "value": 5.255}, {"from": "a958c32a-7bcb-4442-bf08-5a3736c10f92", "to": "6d225e93-9c17-4571-a97f-9e304e666177", "value": 3.606}, {"from": "42da21ef-612a-4282-a839-4f2acbb746fd", "to": "8430665f-6e30-42d6-8995-a8eada6139ab", "value": 3.525}, {"from": "be66a646-c5ae-49c9-a073-31e8eea01d85", "to": "6d225e93-9c17-4571-a97f-9e304e666177", "value": 3.516}, {"from": "6d225e93-9c17-4571-a97f-9e304e666177", "to": "8430665f-6e30-42d6-8995-a8eada6139ab", "value": 4.152}, {"from": "6d225e93-9c17-4571-a97f-9e304e666177", "to": "479cf124-3fe7-4add-b198-714722ee6410", "value": 3.733}, {"from": "6d225e93-9c17-4571-a97f-9e304e666177", "to": "a0e0b586-31b3-4b18-80b1-d1fdc536945c", "value": 3.5}, {"from": "6d225e93-9c17-4571-a97f-9e304e666177", "to": "f8c289c1-ebbc-4566-acab-0153488d1b5e", "value": 3.514}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
