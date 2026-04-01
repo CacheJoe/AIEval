@@ -17,27 +17,36 @@ settings = get_settings()
 
 
 # ---------------------------------------------------------
-# FIX: Ensure writable SQLite location on Streamlit Cloud
+# Decide database location
 # ---------------------------------------------------------
 
-database_url = settings.database_url
+def resolve_database_url() -> str:
 
-if database_url.startswith("sqlite"):
-    # Detect Streamlit / cloud environment
-    running_on_streamlit = (
-        os.getenv("STREAMLIT_SERVER_RUNNING")
-        or os.getenv("STREAMLIT_ENV")
-        or Path("/mount/src").exists()
-    )
+    original_url = settings.database_url
 
-    if running_on_streamlit:
-        # Use writable temp directory
-        db_path = Path("/tmp/aiales.db")
-        db_path.parent.mkdir(parents=True, exist_ok=True)
+    if original_url.startswith("sqlite"):
 
-        database_url = f"sqlite:///{db_path}"
+        # Detect Streamlit environment
+        running_on_streamlit = (
+            os.getenv("STREAMLIT_SERVER_RUNNING")
+            or Path("/mount/src").exists()
+        )
 
-        print("Using writable SQLite database at:", db_path)
+        if running_on_streamlit:
+
+            db_path = Path("/tmp/aiales.db")
+
+            # Ensure directory exists
+            db_path.parent.mkdir(parents=True, exist_ok=True)
+
+            print("Using writable SQLite database at:", db_path)
+
+            return f"sqlite:///{db_path}"
+
+    return original_url
+
+
+database_url = resolve_database_url()
 
 
 # ---------------------------------------------------------
@@ -54,10 +63,12 @@ if database_url.startswith("sqlite"):
         "check_same_thread": False
     }
 
+
 engine: Engine = create_engine(
     database_url,
     **engine_kwargs,
 )
+
 
 SessionLocal = sessionmaker(
     bind=engine,
@@ -68,25 +79,26 @@ SessionLocal = sessionmaker(
 
 
 @event.listens_for(engine, "connect")
-def enable_sqlite_foreign_keys(dbapi_connection, connection_record) -> None:  # type: ignore[no-untyped-def]
-    """Enable SQLite foreign key enforcement."""
+def enable_sqlite_foreign_keys(dbapi_connection, connection_record):
     if database_url.startswith("sqlite"):
         cursor = dbapi_connection.cursor()
         cursor.execute("PRAGMA foreign_keys=ON")
         cursor.close()
 
 
-def init_db() -> None:
-    """Create database tables for local development."""
-    import app.models  # noqa: F401
+def init_db():
+
+    import app.models
 
     Base.metadata.create_all(bind=engine)
 
 
 def get_db() -> Generator[Session, None, None]:
-    """Yield a database session."""
+
     db = SessionLocal()
+
     try:
         yield db
+
     finally:
         db.close()
