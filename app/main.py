@@ -17,7 +17,7 @@ from app.utils.exceptions import AppException
 from app.utils.logging import configure_logging
 
 # NEW — import seed function
-from app.seed_data import main as seed_data
+from app.seed_sample_data import main as seed_data
 
 
 settings = get_settings()
