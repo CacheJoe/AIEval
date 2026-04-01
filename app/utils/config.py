@@ -21,7 +21,7 @@ IS_STREAMLIT = os.getenv("STREAMLIT_SERVER_PORT") is not None
 if IS_STREAMLIT:
     DEFAULT_SQLITE_PATH = Path("/tmp/aiales.db")
 else:
-    DEFAULT_SQLITE_PATH = PROJECT_ROOT / "database" / "aiales.db"
+    DEFAULT_SQLITE_PATH = Path("/tmp/aiales.db")
 
 
 class Settings(BaseSettings):
