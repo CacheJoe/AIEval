@@ -1,5 +1,27 @@
 """Streamlit ERP-style frontend for AIALES."""
+import subprocess
+import time
+import sys
+from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT))
+
+def start_backend():
+    subprocess.Popen(
+        [
+            "uvicorn",
+            "app.main:app",
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "8000"
+        ]
+    )
+
+start_backend()
+
+time.sleep(3)
 from __future__ import annotations
 
 import json
