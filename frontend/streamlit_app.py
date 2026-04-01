@@ -226,10 +226,7 @@ def login_view() -> None:
                 st.error("Login failed.")
     st.markdown("</div>", unsafe_allow_html=True)
 
-    st.info(
-        "Seed accounts: admin@aiales.local / ChangeMe123!, faculty@aiales.local / Faculty123!"
-    )
-
+  
 
 def fetch_classes() -> list[dict[str, Any]]:
     """Load classes visible to the current user."""
