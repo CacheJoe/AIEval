@@ -10,6 +10,12 @@ from typing import Literal
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
+from pathlib import Path
+
+# Always writable on Streamlit / containers
+DEFAULT_SQLITE_PATH = Path("/tmp/aiales.db")
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 # -----------------------------------------------------
