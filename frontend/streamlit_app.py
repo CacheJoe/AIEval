@@ -22,22 +22,34 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.append(str(ROOT))
 
 # Start FastAPI backend automatically
+import socket
+
+def is_port_in_use(port: int) -> bool:
+    """Check if backend is already running."""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex(("127.0.0.1", port)) == 0
+
+
 def start_backend():
-    subprocess.Popen(
-        [
-            "uvicorn",
-            "app.main:app",
-            "--host",
-            "0.0.0.0",
-            "--port",
-            "8000",
-        ]
-    )
+    """Start FastAPI backend only once."""
+    if not is_port_in_use(8000):
+        subprocess.Popen(
+            [
+                "uvicorn",
+                "app.main:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000",
+            ]
+        )
+        time.sleep(3)
+
 
 start_backend()
 
 # Give backend a moment to start
-time.sleep(3)
+
 
 API_BASE_URL = os.getenv("FRONTEND_API_BASE_URL", "http://127.0.0.1:8000/api/v1")
 REQUEST_CONNECT_TIMEOUT_SECONDS = float(os.getenv("FRONTEND_CONNECT_TIMEOUT_SECONDS", "10"))
