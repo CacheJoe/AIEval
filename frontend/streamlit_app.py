@@ -1,9 +1,4 @@
 """Streamlit ERP-style frontend for AIALES."""
-import subprocess
-import time
-import sys
-from pathlib import Path
-
 
 from __future__ import annotations
 
@@ -17,6 +12,33 @@ import requests
 import streamlit as st
 import streamlit.components.v1 as components
 
+import subprocess
+import time
+import sys
+from pathlib import Path
+
+# Ensure project root is available
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT))
+
+# Start FastAPI backend automatically
+def start_backend():
+    subprocess.Popen(
+        [
+            "uvicorn",
+            "app.main:app",
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "8000",
+        ]
+    )
+
+start_backend()
+
+# Give backend a moment to start
+time.sleep(3)
+
 API_BASE_URL = os.getenv("FRONTEND_API_BASE_URL", "http://127.0.0.1:8000/api/v1")
 REQUEST_CONNECT_TIMEOUT_SECONDS = float(os.getenv("FRONTEND_CONNECT_TIMEOUT_SECONDS", "10"))
 REQUEST_READ_TIMEOUT_SECONDS = float(os.getenv("FRONTEND_READ_TIMEOUT_SECONDS", "60"))
@@ -29,24 +51,7 @@ LONG_RUNNING_PATH_HINTS = (
     "/reports",
 )
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.append(str(ROOT))
 
-def start_backend():
-    subprocess.Popen(
-        [
-            "uvicorn",
-            "app.main:app",
-            "--host",
-            "0.0.0.0",
-            "--port",
-            "8000"
-        ]
-    )
-
-start_backend()
-
-time.sleep(3)
 def apply_theme() -> None:
     """Apply dashboard styling."""
     st.markdown(
